@@ -2,6 +2,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:practice_ui/Page1.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -81,7 +82,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-              Image.network("https://scontent.ftpe2-2.fna.fbcdn.net/v/t1.6435-9/166556403_10158155540521762_6671495462843719861_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=X2mKkIdc5p8AX-ibflv&_nc_ht=scontent.ftpe2-2.fna&oh=00_AT-GbqIsOdr2kOgcnhO_1846ghQElPvzyRwAy9TnEyYzZw&oe=6353CF61"),
+              ElevatedButton(
+                  onPressed: (){
+                    Navigator.push(context,MaterialPageRoute(builder: (context) => Page1()));
+                  },
+                  child: Text("進入下一個頁面")
+              ),
+              //Image.network("https://scontent.ftpe2-2.fna.fbcdn.net/v/t1.6435-9/166556403_10158155540521762_6671495462843719861_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=X2mKkIdc5p8AX-ibflv&_nc_ht=scontent.ftpe2-2.fna&oh=00_AT-GbqIsOdr2kOgcnhO_1846ghQElPvzyRwAy9TnEyYzZw&oe=6353CF61"),
             ],
           ),
         ),
