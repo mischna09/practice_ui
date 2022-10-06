@@ -48,12 +48,40 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                   child: Text("註冊")
               ),
-              Text("大標題",
-                style: TextStyle(
-                  fontSize: 28,
-                  color: Colors.amber,
+              Container(
+                height: 100,
+                decoration: BoxDecoration(
+                  color: Colors.black26,
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: Colors.red,
+                    width: 2,
+                  ),
                 ),
-              )
+                child: Column(
+                  children: [
+                    Text("大標題",
+                      style: TextStyle(
+                        fontSize: 28,
+                        color: Colors.amber,
+                      ),
+                    ),
+                    Text("123",
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.amber,
+                      ),
+                    ),
+                    Text("456",
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.amber,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Image.network("https://scontent.ftpe2-2.fna.fbcdn.net/v/t1.6435-9/166556403_10158155540521762_6671495462843719861_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=dbeb18&_nc_ohc=X2mKkIdc5p8AX-ibflv&_nc_ht=scontent.ftpe2-2.fna&oh=00_AT-GbqIsOdr2kOgcnhO_1846ghQElPvzyRwAy9TnEyYzZw&oe=6353CF61"),
             ],
           ),
         ),
